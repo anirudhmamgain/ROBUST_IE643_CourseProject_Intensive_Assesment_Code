@@ -1,1 +1,1 @@
-Unsupervised liver segmentatiuon using 2dscan images 
+Unsupervised liver segmentatiuon using 2Dscan images 
