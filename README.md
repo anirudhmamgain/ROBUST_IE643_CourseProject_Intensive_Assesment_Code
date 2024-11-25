@@ -2,8 +2,17 @@
 
 **Steps to Run the Code**
 
-1.Run all the cells one by one in demo.ipynb
-2.Set model path as path of wnet_weights.pth 
-3.Set device = 'cpu'
-4.wnet_weights are in the repository
-5.Run the final cell for the segmentation
+# How to Use the Demo Notebook for Liver Segmentation
+
+Follow the steps below to run the segmentation using the `demo.ipynb` notebook:
+
+1. **Run All Cells**  
+   Open the `demo.ipynb` file and execute all the cells sequentially.
+
+2. **Set the Model Path**  
+   Update the model path in the notebook to point to `wnet_weights.pth`.  
+   Example:
+   ```python
+   model_path = "path_to/wnet_weights.pth"
+
+   
