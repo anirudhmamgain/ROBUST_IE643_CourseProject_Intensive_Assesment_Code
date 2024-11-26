@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    {% for output in outputs %}
+        {% if output.type == 'text' %}
+            <div>
+                <h3>Text Output:</h3>
+                <pre>{{ output.content }}</pre>
+            </div>
+        {% elif output.type == 'image' %}
+            <div>
+                <h3>Image Output:</h3>
+                <img src="{{ url_for('static', filename='results/' + output.content) }}" alt="Segmentation Image">
+            </div>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
+
+
+
