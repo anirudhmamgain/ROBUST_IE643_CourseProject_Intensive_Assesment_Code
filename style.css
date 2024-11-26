@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f06, #48c6ef);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Form Container */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+}
+
+/* Form Input Fields */
+input[type="file"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #48c6ef;
+    background: #ffffff;
+    font-size: 1em;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    background-color: #f0f8ff;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    padding: 15px;
+    font-size: 1.1em;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff4500;
+}
+
+/* Result Section */
+h2 {
+    margin-top: 20px;
+    color: #ffff00;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1em;
+    color: #d3d3d3;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    input[type="submit"] {
+        font-size: 1em;
+    }
+}
